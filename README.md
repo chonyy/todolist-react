@@ -14,6 +14,9 @@
 
 > To do list built with react!
 
+Try it out! https://chonyy.github.io/todolist-react/
+This app uses **local storage** by implementing the effect hook in React, which means the tasks that the user entered will **still be on the app** even if refreshing or closing the page.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
