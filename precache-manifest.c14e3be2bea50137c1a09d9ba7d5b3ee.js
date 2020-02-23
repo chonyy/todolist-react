@@ -1,7 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "852670a16218e9b535047b1494cc1565",
+    "revision": "6b234f9cbb1994b1640e6b9c61c86425",
     "url": "/todolist-react/index.html"
+  },
+  {
+    "revision": "25f1985630bf18970538",
+    "url": "/todolist-react/static/css/main.c8f0c55f.chunk.css"
   },
   {
     "revision": "feb1d0c258300f8bc986",
@@ -12,11 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/todolist-react/static/js/2.b0f29187.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0f07e54b9db308c7e5fb",
-    "url": "/todolist-react/static/js/main.1fe6ad31.chunk.js"
+    "revision": "25f1985630bf18970538",
+    "url": "/todolist-react/static/js/main.5ae55ed9.chunk.js"
   },
   {
     "revision": "6c76c3075fa6583a668b",
     "url": "/todolist-react/static/js/runtime-main.6e9b8191.js"
+  },
+  {
+    "revision": "132e3fc87e6e165dadbf1595c28e1694",
+    "url": "/todolist-react/static/media/wood.132e3fc8.jpg"
   }
 ]);
