@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Todolist from './Todolist'
 import uuidv4 from 'uuid/v4'
+import "./style.css";
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
@@ -39,19 +40,24 @@ function App() {
     }
 
     return (
-        <>
-            <Todolist todos={todos} toggletodo={toggletodo} />
-            <div class="left">{todos.filter(todo => !todo.complete).length} tasks left to do</div>
-            <div class="addtask">
-                <div class="form__group">
-                    <input ref={todonameref} type="input" class="form__field" placeholder=" Enter tasks..." name="Task" id='name' required />
-                    <label for="name" class="form__label">Enter Task...</label>
+        <div class="container">
+            <div class="title">To Do List</div>
+            <div class="line"></div>
+            <div class="tasks">
+                <Todolist todos={todos} toggletodo={toggletodo} />
+                <div class="left">{todos.filter(todo => !todo.complete).length} tasks left to do</div>
+                <div class="addtask">
+                    <div class="form__group">
+                        <input ref={todonameref} type="input" class="form__field" placeholder=" Enter tasks..." name="Task" id='name' required />
+                        <label for="name" class="form__label">Enter Task...</label>
+                    </div>
+                    <button onClick={handleaddtodo}>ADD TODO</button>
+
                 </div>
-                <button onClick={handleaddtodo}>ADD TODO</button>
+                <button onClick={handlecomplete}>CLEAR COMPLETED</button>
 
             </div>
-            <button onClick={handlecomplete}>CLEAR COMPLETED</button>
-        </>
+        </div>
 
     )
 }
